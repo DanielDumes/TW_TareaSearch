@@ -1,0 +1,24 @@
+<h1>{{heroe.nombre}} <small>{{heroe.aparicion}}</small></h1>
+<hr>
+<div class="row">
+    <div class="col-md-4">
+        <img img [src]="heroe.img " class="img-fluid rounded-start " alt="... ">
+        <br><br>
+        <a href="heroes" class="btn btn-outline-danger btn-block">Regresar</a>
+    </div>
+    <div class="col-md-8">
+        
+
+        <h3>{{heroe.nombre}}</h3>
+        <hr>
+        <p>
+            {{heroe.bio}}
+            <br>
+            {{heroe.casa}}
+        </p>
+        <div >
+            <img *ngIf="heroe.casa == 'Marvel' " src="https://media.discordapp.net/attachments/1008234646426882091/1128091606940127362/R.png?width=1177&height=662" width="200" alt="">
+            <img *ngIf="heroe.casa == 'DC' " src="https://media.discordapp.net/attachments/1008234646426882091/1128091786636693554/OIP.png?width=592&height=332" alt="">
+        </div>
+
+    </div>
